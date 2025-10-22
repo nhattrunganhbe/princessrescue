@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a23;
+  height: 1000px;
+}
+#game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#gameplay {
+  background-color: #fff;
+  border: solid 2px;
+  max-height: 500px;
+  max-width: 400px;
+  box-shadow: 0 0 0 20px white;
+}
+#stat {
+  border-bottom: solid 2px;
+  padding: 5px;
+}
+.stats {
+  margin: 5px;
+}
+.buttons {
+  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #febe41;
+  border: solid 1px #feac32;
+  cursor: pointer;
+  padding: 3px;
+}
+#button4,
+#button5 {
+  display: none;
+}
+#text {
+  background-color: #0a0a23;
+  color: #fff;
+  padding: 15px;
+}
+#monsterStat {
+  padding: 5px;
+  display: none;
+  background-color: rgb(243, 49, 49);
+  display: flex;
+  gap: 10px;
+}
+#souvenir {
+  display: none; /* Ẩn mặc định */
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#souvenir h2 {
+  color: #febe41;
+  margin: 10px 0 20px 0;
+  font-size: 20px;
+}
+
+#souvenirContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+#souvenir1Container,
+#souvenir2Container {
+  cursor: pointer;
+  border: 3px solid #febe41;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+#souvenir1Container:hover,
+#souvenir2Container:hover {
+  transform: scale(1.05);
+  border-color: #feac32;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#souvenirImg1,
+#souvenirImg2 {
+  width: 150px;
+  height: 150px;
+  display: block;
+  object-fit: cover;
+  border-radius: 5px;
+}
